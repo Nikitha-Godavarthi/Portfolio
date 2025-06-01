@@ -1,20 +1,3 @@
-// import Link from 'next/link';
-
-// export default function Header() {
-//   return (
-//     <header className="flex justify-between items-center py-4 px-8 shadow-md bg-black text-white sticky top-0 z-50">
-//       <div className="text-xl font-bold">Nikitha</div>
-//       <nav className="space-x-6 font-medium">
-//         <a href="#about" className="hover:text-indigo-400">About</a>
-//         <a href="#experience" className="hover:text-indigo-400">Experience</a>
-//         <a href="#projects" className="hover:text-indigo-400">Projects</a>
-//         <a href="#skills" className="hover:text-indigo-400">Skills</a>
-//         <a href="#contact" className="hover:text-indigo-400">Contact</a>
-//       </nav>
-//     </header>
-//   );
-// }
-
 
 import Link from 'next/link';
 import Image from 'next/image';
