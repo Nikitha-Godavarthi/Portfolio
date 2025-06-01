@@ -6,7 +6,6 @@ const skills = {
   Databases: ["MongoDB", "MySQL", "Cosmos DB", "DB2", "Oracle DB", "SQL Server"],
   DevOps: ["AWS", "Docker", "Git", "CI/CD"],
   Languages: ["JavaScript", "TypeScript", "Python", "HTML", "CSS", "C", "C++","C#", "Java", "SQL"],
-  DataScience: ["NumPy", "Pandas", "Matplotlib", "Seaborn"],
   Applications: [
     "VS Code",
     "Jupyter Notebook",
