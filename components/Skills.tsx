@@ -3,10 +3,22 @@ import { motion } from 'framer-motion';
 const skills = {
   Frontend: ["React", "React Native", "Next.js", "Flutter"],
   Backend: ["Node.js", "Express.js", "Django", "FastAPI", "Spring Boot"],
-  Languages: ["JavaScript", "TypeScript", "Python", "C++", "SQL"],
   Databases: ["MongoDB", "MySQL"],
   DevOps: ["AWS", "Docker"],
-  Tools: ["Git", "Figma"],
+  Languages: ["JavaScript", "TypeScript", "Python", "HTML","CSS","C","C++", "SQL"],
+  Applications: [
+    "VS Code",
+    "Jupyter Notebook",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+    "Git",
+    "Docker",
+    "SQLAlchemy",
+    "Figma",
+    "WordPress"
+  ],
 };
 
 export default function Skills() {
