@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
+
 
 const projects = [
   {
@@ -85,12 +87,15 @@ export default function Projects() {
             className="bg-white/10 backdrop-blur-md p-6 max-w-[520px] rounded-xl shadow-md w-full mx-auto will-change-transform"
           >
           
-          
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-80 object-cover rounded-md mb-4"
-              />
+          <div className="relative w-full h-80 mb-4">
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover rounded-md"
+            />
+          </div>
+
               <h3 className="text-xl font-bold text-white">{project.title}</h3>
               <p className="text-sm text-white mb-2">{project.subtitle}</p>
               <p className="text-sm text-white mb-4 leading-relaxed">{project.description}</p>

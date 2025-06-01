@@ -41,12 +41,12 @@ export default function Contact() {
     <section id="contact" className="py-8 px-6 bg-black text-white">
       <div className="max-w-2xl mx-auto text-center">
         <div className="text-center mb-6">
-          <h2 className="text-4xl font-bold mb-4">Let's Connect</h2>
+          <h2 className="text-4xl font-bold mb-4">Let&apos;s Connect</h2>
           <div className="w-24 h-[2px] bg-gray-600 mx-auto" />
         </div>
 
         <p className="text-white mb-6">
-          If you're interested, send me a message or connect through the links below.
+          If you&apos;re interested, send me a message or connect through the links below.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 items-center">

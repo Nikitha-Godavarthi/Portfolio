@@ -52,15 +52,16 @@ export default function Experience() {
               viewport={{ once: false, amount: 0.3 }}
               className="bg-gray-800 w-full p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow will-change-transform flex gap-6 items-center"
             >
-              <div className="min-w-[60px]">
+             <div className="relative w-[60px] h-[60px] flex-shrink-0">
                 <Image
                   src={exp.image}
                   alt={exp.company}
-                  width={60}
-                  height={60}
+                  fill
+                  sizes="60px"
                   className="rounded-md object-contain"
                 />
               </div>
+
               <div>
                 <h3 className="text-2xl font-bold mb-1 text-white">{exp.title}</h3>
                 <p className="text-md text-gray-400 mb-3 italic">{exp.company}</p>
