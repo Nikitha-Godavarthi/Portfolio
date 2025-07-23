@@ -18,6 +18,13 @@ const fadeInUp = {
 
 const experiences = [
   {
+    company: "Heartland Community Network",
+    title: "Software Engineer",
+    image: "/hcn-logo.png",
+    story:
+      "Architected and deployed scalable microservices using Docker & Kubernetes, boosting uptime and load handling by 50%. Automated CI/CD with Jenkins, cutting release time by 60%, and enhanced React UI performance by 30% through code-splitting and lazy loading. Introduced proactive monitoring with Prometheus and Grafana to improve issue detection. Collaborated with cross-functional teams to ensure seamless integration across frontend and backend systems.",
+  },
+  {
     company: "Hyphenova",
     title: "Software Engineer Intern",
     image: "/hyp-logo.png",

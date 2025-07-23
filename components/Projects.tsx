@@ -6,13 +6,13 @@ import Image from 'next/image';
 
 const projects = [
   {
-    title: "Job Tracker",
-    subtitle: "Frontend Career Utility",
-    image: "/job-tracker.png",
+    title: "Visa Component Suggestion Tool",
+    subtitle: "UI component suggestion tool",
+    image: "/visa.png",
     description:
-      "Created a user-friendly interface for tracking job applications. Features include filtering by status, dynamic search, status tags, and local storage support. Built with accessibility and responsive UI principles.",
-    tech: ["React", "Tailwind", "Shadcn/UI", "MongoDB"],
-    link: "https://github.com/Nikitha-Godavarthi/Job-tracker.git"
+      "Developed a full-stack web application that generates Visa Nova component code from user prompts. Engineered RESTful APIs and implemented JWT-based authentication for secure user access.",
+    tech: ["React", "Visa-Nova React", "Node.js", "MongoDB"],
+    link: "https://visa-ui-suggestion-system.vercel.app/"
   },
   
   {
@@ -32,6 +32,15 @@ const projects = [
       "Designed a cross-platform mobile app for outpass request automation, reducing approval time by 50%. Integrated real-time updates, role-based access control, and Dockerized backend services for scalable deployment.",
     tech: ["React Native", "FastAPI", "SQLAlchemy", "Docker"],
     link: "https://github.com/Nikitha-Godavarthi/admin-dashboard.git"
+  },
+  {
+    title: "Job Tracker",
+    subtitle: "Frontend Career Utility",
+    image: "/job-tracker.png",
+    description:
+      "Created a user-friendly interface for tracking job applications. Features include filtering by status, dynamic search, status tags, and local storage support. Built with accessibility and responsive UI principles.",
+    tech: ["React", "Tailwind", "Shadcn/UI", "MongoDB"],
+    link: "https://github.com/Nikitha-Godavarthi/Job-tracker.git"
   },
   {
     title: "Secure Banking System",
