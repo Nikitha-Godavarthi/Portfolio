@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="hero-visual">
         <div className="portrait-frame">
           <Image src="/profile.jpg" alt="Nikitha Godavarthi" fill priority sizes="(max-width: 820px) 90vw, 42vw" className="portrait" />
-          <div className="portrait-note"><span>Currently</span>Building AI-powered systems at Give Me The VIN.com</div>
+          <div className="portrait-note"><span>Currently</span>Working at Give Me The VIN.com.</div>
         </div>
         <div className="orbit-mark" aria-hidden="true">✦</div>
       </div>
