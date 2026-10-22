@@ -1,20 +1,23 @@
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState } from "react";
+
+const links = [["About", "#about"], ["Experience", "#experience"], ["Work", "#projects"], ["Skills", "#skills"], ["Contact", "#contact"]];
+
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <header className="flex justify-between items-center px-8 py-4 bg-[#0e0e11] text-white sticky top-0 z-50">
-      <div className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">
-        <Image src="/niki-logo.png" alt="Niki Logo" width={32} height={32} />
-      </div>
-
-
-      <nav className="flex gap-8 text-sm font-medium">
-      <Link href="#about" className="hover:text-indigo-300">About</Link>
-        <Link href="#experience" className="hover:text-indigo-300">Experience</Link>
-        <Link href="#projects" className="hover:text-indigo-300">Projects</Link>
-        <Link href="#skills" className="hover:text-indigo-300">Skills</Link>
-        <Link href="#contact" className="hover:text-indigo-300"> Contact</Link>
+    <header className="site-header">
+      <a className="wordmark" href="#top" aria-label="Nikitha Godavarthi, home">
+        <span>NG</span>
+        <span className="wordmark-name">Nikitha Godavarthi</span>
+      </a>
+      <button type="button" className="menu-button" aria-label="Toggle navigation" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
+        <span /><span />
+      </button>
+      <nav className={open ? "nav-links is-open" : "nav-links"} aria-label="Primary navigation">
+        {links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
       </nav>
     </header>
   );

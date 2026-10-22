@@ -1,55 +1,25 @@
-'use client';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: [0.25, 0.46, 0.45, 0.94],
-    },
-  },
-};
+"use client";
 
+import { motion } from "framer-motion";
+import { FiArrowUpRight, FiAward, FiBookOpen } from "react-icons/fi";
 
 export default function About() {
-    return (
-      <section id="about" className="scroll-mt-24 py-20 px-6 bg-black text-white">
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12 px-6"
-        >
-          {/* LEFT: About Text */}
-          <div className="md:w-2/3">
-            <h2 className="text-4xl font-bold mb-6 border-b border-gray-700 pb-2">About Me</h2>
-            <p className="text-lg leading-7 text-gray-300">
-            I&apos;m a Software Engineer with a Master’s degree in Computer Science from Indiana University. I specialize in building responsive, user-centric web and mobile applications that deliver seamless user experiences across platforms.      </p>
-            <p className="text-lg leading-7 text-gray-300 mt-4">
-            My expertise spans full-stack development, cross-platform UI engineering, and cloud-based infrastructure. I’ve worked extensively with technologies like React, React Native, Flutter, Node.js, and AWS, developing scalable features, secure APIs, and modern design systems.
-            </p>
-            <p className="text-lg leading-7 text-gray-300 mt-4">
-            I&apos;m deeply passionate about UI/UX design, creative product experiences, and leveraging data-driven insights to drive usability and performance. I thrive in agile environments where thoughtful design and technical precision come together to solve real-world problems.      </p>
-          </div>
-
-          {/* RIGHT: Profile Image */}
-          <div className="md:w-1/3 self-center">
-            <Image
-              src="/profile.jpg"
-              alt="Nikitha"
-              width={400}
-              height={400}
-              className="rounded-xl"
-            />
-          </div>
-
+  return (
+    <section id="about" className="about section-shell section-pad">
+      <motion.div className="section-kicker" initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.5 }}><span>01</span> About</motion.div>
+      <div className="about-grid">
+        <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.4 }}>Engineering depth.<br />Product instinct.</motion.h2>
+        <motion.div className="about-copy" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }}>
+          <p>I&apos;m a performance-driven software engineer with a Master&apos;s in Computer Science. I build robust applications from the interface down to the data layer, with recent work spanning hybrid RAG systems, AI-agent training, CRM modernization, and accessible component systems.</p>
+          <p>My approach pairs technical precision with a strong UI/UX foundation. I care about the details people feel—clear workflows, responsive interfaces, fast feedback—and the architecture that makes those experiences reliable.</p>
+          <a className="inline-arrow" href="#contact">Let&apos;s build something useful <FiArrowUpRight /></a>
         </motion.div>
-</section>
-
-    );
-  }
-  
+      </div>
+      <div className="credentials-grid">
+        <article className="credential-card"><FiBookOpen aria-hidden="true" /><div><p className="card-label">Education</p><h3>Indiana University</h3><p>Master of Science in Computer Science</p><span>2023–2025 · Bloomington, IN</span></div></article>
+        <article className="credential-card"><FiBookOpen aria-hidden="true" /><div><p className="card-label">Education</p><h3>SRM University AP</h3><p>B.Tech in Computer Science &amp; Engineering</p><span>2019–2023</span></div></article>
+        <article className="credential-card credential-accent"><FiAward aria-hidden="true" /><div><p className="card-label">Certification</p><h3>AWS Certified Cloud Practitioner</h3><p>Amazon Web Services · CLF-C02</p><span>Issued April 2025</span></div></article>
+      </div>
+    </section>
+  );
+}
